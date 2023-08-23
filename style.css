@@ -1,5 +1,18 @@
 :root{
-    
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Soft_orange: hsl(35, 77%, 62%);
+    --Soft_red: hsl(5, 85%, 63%);
+
+    /* ### Neutral */
+
+    --Off_white: hsl(36, 100%, 99%);
+    --Grayish_blue: hsl(233, 8%, 79%);
+    --Dark_grayish_blue: hsl(236, 13%, 42%);
+    --Very_dark_blue: hsl(240, 100%, 5%);
+
 }
 @font-face {
     font-family: Inter;
@@ -18,7 +31,8 @@ body{
     display: grid;
     grid-template-rows:0.5fr 8fr 0.5fr ;
     gap: 1px;
-    padding: 2rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
 }
 
 header{
@@ -53,6 +67,13 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.description p{
+    text-align: left;
+    font-size: 12px;
+  
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
 header{
       grid-column: 1/4;
 }
@@ -65,7 +86,7 @@ main{
 }
 .main_read{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.2fr  0.9fr;
     gap: 10px;
 }
 
@@ -80,13 +101,21 @@ main{
 
 .current_article{
     display: grid;
-    grid-template-rows: 2fr 1.1fr;
+    grid-template-rows: 1.5fr 1fr;
+   
 }
 
 aside{
-   display: grid;
-   grid-template-rows: repeat(4, 1fr);
-    
+   display: flex;
+   background-color: var(--Very_dark_blue);
+   flex-direction: column;
+}
+aside p {
+    color: var(--Grayish_blue);
+}
+.list_new a{
+    color: var(--Off_white);
+    font-size: 18px;
 }
 
 h1{
