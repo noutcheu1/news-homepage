@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <script src="animation.js" defer></script>
     <title>Frontend Mentor | News homepage</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,17 +25,27 @@
     </style>
   </head>
   <body>
+    <div class="menu_vertical" id="">
+      <div class="close"></div>
+      <ul class="sub_menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Popular</a></li>
+        <li><a href="">Trending</a></li>
+        <li><a href="">Categories</a></li>
+      </ul>
+    </div>
     <header>
       <nav>
         <div class="logo">
           <img src="./assets/images/logo.svg" alt="" srcset="" />
         </div>
         <ul class="menu">
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+          <li><a href="">Home</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Categories</a></li>
         </ul>
       </nav>
     </header>
@@ -51,25 +61,25 @@
                   the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
                 </p>
-                <a href="#">Read more</a>
+                <a href="#" role="open">READ MORE</a>
               </div>
             </div>
           </article>
           <aside>
-            <h1>New</h1>
+            <div><h1>New</h1></div>
             <div class="list_new">
-              <h2>Hydrogen VS Electric Cars</h2>
+              <a href="#">Hydrogen VS Electric Cars</a>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
             </div>
             <div class="list_new">
-              <h2>The Downsides of AI Artistry</h2>
+              <a href="#">The Downsides of AI Artistry</a>
               <p>
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
             </div>
             <div class="list_new">
-              <h2>Is VC Funding Drying Up?</h2>
+              <a href="#">Is VC Funding Drying Up?</a>
               <p>
                 Private funding by VC firms is down 50% YOY. We take a look at
                 what that means.
